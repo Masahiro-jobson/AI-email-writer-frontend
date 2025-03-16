@@ -1,4 +1,3 @@
-<img width="456" alt="image" src="https://github.com/user-attachments/assets/26ab7373-9cf5-4162-85fa-afa0fffe5246" />
 <div id="top"></div>
 
 ## Table of the development environment
@@ -81,11 +80,10 @@ It provides the modern design with this application. For each TextField and Sele
 <h1>Google extension</h1>
   email-writer-ext folder allows the user to use this application to use in Google chrome. For manifest.json, it's mainly based on the template provided by Google; however, I added host_permissions proxy, which connects to backend side ("https://localhost:8080/*") and accept the extension permission to access any URL that matches the pattern (*://mail.google.com/* ).
   The critical point of content.js is observer variable, which refers to MutationObserver object which has a call back function inside. This variable allows the application to detect the change of dialog box (shown with '.aDh, .btC, [role="dialog"]') as below.<br/>
-  Ex.1 Reply to Sender (inside the received mail)
+  Ex.1 Reply to Sender (inside the received mail) <br/>
 <img width="1127" alt="image" src="https://github.com/user-attachments/assets/9005181d-1f7d-424f-8c31-3107118c0e3e" />
-
 <br/>
-  Ex.2 Reply to Sender (when it is popped out)
+  Ex.2 Reply to Sender (when it is popped out) <br/>
   <img width="456" alt="image" src="https://github.com/user-attachments/assets/ccffacfb-2f55-4346-88c8-77857cfb150c" />
 
     
