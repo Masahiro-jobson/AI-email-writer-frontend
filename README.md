@@ -61,7 +61,7 @@
    This project is AI Email Writer, which enables for users to create <br/>
   Email contents by sending prompts to the chatbot (used Gemini here).<br/>
 
-  <h1>Backend</h1>
+  <h1>Backend (SpringBoot)</h1>
    In the Backend side, I used SpringBoot framework. There are 4 classes such as <br/>
   EmailWriterApplication, EmailGeneratorController(Controller),  EmailGeneratorService (Service), EmailRequest.<br/>
   EmailWriterApplication is the main class for making the program run. EmailRequest handles<br/>
@@ -70,9 +70,12 @@
    EmailGeneratorController has @RequestMapping, which sets the endpoint to "/api/email". In that class, EmailGeneratorService object is created. In other way, Constructor of the EmailGeneratorController is created automatically because of @AllArgsConstructor (With this annotation, EmailGenratorService bean object is created in the arguments and passed through).<br/>
    ResponseEntity<String> is a class and return type (Spring Framework) of gnerateEmail method. @RequestBody inject the function of conversion from JSON to JAVA object, which refers to EmailRequest class in the arguments. The response variable stores the generateEmailReply method of emailGeneratorService class with the parenthesis "emailRequest". And return "response" String variable with .ok method of ResponseEntity.BodyBuilder.
 
-  <h1>Frontend</h1>
-   In the Frontend side, I used React framework with Vite. I mainly made 5 useState hooks including emailContent, tone, generatedReply, loading, error. 
-    For generatedReply, loading, and error, these variable are used in handleSubmit function. handleSubmit function has async function with await keywords. They allow to stop the code execution. For instance, handleSubmit function is stopped till promise is resolved (e.,g API request (backend side) is completed. In that process, the code return error value with console.error if error is catched. After try and catch process, setLoading is set to false value, which shows stop loading.
+  <h1>Frontend(React)</h1>
+   In the Frontend side, I used React framework with Vite. I mainly made 5 useState hooks including emailContent, tone, generatedReply, loading, error. <br/>
+    For generatedReply, loading, and error, these variable are used in handleSubmit function. handleSubmit function has async function with await keywords. They allow to stop the code execution. For instance, handleSubmit function is stopped till promise is resolved (e.,g API request (backend side) is completed. In that process, the code return error value with console.error if error is catched. After try and catch process, setLoading is set to false value, which shows stop loading.<br/>
+    For rendering in the return statement, all design and word size are used from material UI.
+It provides the modern design with this application. For each TextField and Select component, I set onChange prop which has event handler and set onClick prop which handle the click event for Button component.
+    
 </p>
 <!-- プロジェクトの概要を記載 -->
 <!-- 
