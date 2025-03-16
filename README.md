@@ -181,10 +181,10 @@ DJANGO_SETTINGS_MODULE=project.settings.local
 
 ### Check how it works
 
-Check if you can access to https://verdant-sunburst-f21397.netlify.app/
-However, the server (backend) is made with render free plan, so you cannot get
-a reply because the sever has a limited time.
-Please see the following picture as an example.
+Check if you can access to https://verdant-sunburst-f21397.netlify.app/ <br/>
+However, the server (backend) is made with render free plan, so you cannot get <br/>
+a reply because the sever has a limited time. <br/>
+Please see the following picture as an example. <br/>
 
 <!-- 
 <### コンテナの停止
