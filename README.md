@@ -73,15 +73,18 @@
    In the Frontend side, I used React framework with Vite. I mainly made 5 useState hooks including emailContent, tone, generatedReply, loading, error. <br/>
     For generatedReply, loading, and error, these variable are used in handleSubmit function. handleSubmit function has async function with await keywords. They allow to stop the code execution. For instance, handleSubmit function is stopped till promise is resolved (e.,g API request (backend side) is completed. In that process, the code return error value with console.error if error is catched. After try and catch process, setLoading is set to false value, which shows stop loading.<br/>
     For rendering in the return statement, all design and word size are used from material UI.
-It provides the modern design with this application. For each TextField and Select component, I set onChange prop which has event handler and set onClick prop which handle the click event for Button component. <br/>
+It provides the modern design with this application. For each TextField and Select component, I set onChange prop which has event handler and set onClick prop which handle the click event for Button component.
+ <br/>
 <img width="663" alt="image" src="https://github.com/user-attachments/assets/37d4230b-7328-4faf-94c7-196b9ea33908" />
 <br/>
 
 <h1>Google extension</h1>
   email-writer-ext folder allows the user to use this application to use in Google chrome. For manifest.json, it's mainly based on the template provided by Google; however, I added host_permissions proxy, which connects to backend side ("https://localhost:8080/*") and accept the extension permission to access any URL that matches the pattern (*://mail.google.com/* ).
   The critical point of content.js is observer variable, which refers to MutationObserver object which has a call back function inside. This variable allows the application to detect the change of dialog box (shown with '.aDh, .btC, [role="dialog"]') as below.<br/>
+   <br/>
   Ex.1 Reply to Sender (inside the received mail) <br/>
 <img width="1127" alt="image" src="https://github.com/user-attachments/assets/9005181d-1f7d-424f-8c31-3107118c0e3e" />
+<br/>
 <br/>
   Ex.2 Reply to Sender (when it is popped out) <br/>
   <img width="456" alt="image" src="https://github.com/user-attachments/assets/ccffacfb-2f55-4346-88c8-77857cfb150c" />
