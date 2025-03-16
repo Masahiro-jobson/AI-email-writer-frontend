@@ -22,7 +22,9 @@ function App() {
     //  in the try
      try{
       // Set end point with axios.post and axios is able to make HTTP requsts to a server
-      //from a web application local ver. http://localhost:8080
+      //from a web application local ver. http://localhost:8080 is the local host.
+      //For using backend side, make a backend app with render and put the URL in the bottom.
+      //It allows to connect backend side and the backend side will fetch data with Gemini API
       const response = await axios.post("https://ai-email-writer-backend-i90i.onrender.com/api/email/generate", {
         // pass emailContent, tone as a part of the request body
         emailContent,
