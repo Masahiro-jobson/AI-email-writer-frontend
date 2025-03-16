@@ -51,7 +51,7 @@
 
 ## AI Email Writer
 
-React、DRF、Terraform のテンプレートリポジトリ
+<p><a href="https://github.com/Masahiro-jobson/AI-email-writer-backend.git">This</a> is the backend repository of AI-email-writer</p>
 
 <!-- プロジェクトについて -->
 
