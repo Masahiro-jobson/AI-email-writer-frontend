@@ -101,58 +101,56 @@ For other package version, please refer to pom.xml and package.json.
 ❯ tree -I 'node_modules'
 ```bash
 .
-├── HELP.md
+.
+├── email-writer-backend
+│   ├── HELP.md
+│   ├── mvnw
+│   ├── mvnw.cmd
+│   ├── pom.xml
+│   └── src
+│       ├── main
+│       │   ├── java
+│       │   │   └── com
+│       │   │       └── email
+│       │   │           └── emai
+│       │   │               └── writer
+│       │   │                   ├── EmailGeneratorController.java
+│       │   │                   ├── EmailGeneratorService.java
+│       │   │                   ├── EmailRequest.java
+│       │   │                   └── EmailWriterApplication.java
+│       │   └── resources
+│       │       ├── application.properties
+│       │       ├── static
+│       │       └── templates
+│       └── test
+│           └── java
+│               └── com
+│                   └── email
+│                       └── emai
+│                           └── writer
+│                               └── EmailWriterApplicationTests.java
 ├── email-writer-ext
 │   ├── content.css
 │   ├── content.js
 │   ├── hina_drawing.png
 │   └── manifest.json
-├── email-writer-frontend
-│   ├── README.md
-│   ├── eslint.config.js
-│   ├── index.html
-│   ├── package-lock.json
-│   ├── package.json
-│   ├── public
-│   │   └── vite.svg
-│   ├── src
-│   │   ├── App.css
-│   │   ├── App.jsx
-│   │   ├── assets
-│   │   │   └── react.svg
-│   │   ├── index.css
-│   │   └── main.jsx
-│   └── vite.config.js
-├── hello-world-ext
-│   ├── hello.html
-│   ├── hello_extensions.png
-│   ├── manifest.json
-│   └── popup.js
-├── mvnw
-├── mvnw.cmd
-├── pom.xml
-└── src
-    ├── main
-    │   ├── java
-    │   │   └── com
-    │   │       └── email
-    │   │           └── emai
-    │   │               └── writer
-    │   │                   ├── EmailGeneratorController.java
-    │   │                   ├── EmailGeneratorService.java
-    │   │                   ├── EmailRequest.java
-    │   │                   └── EmailWriterApplication.java
-    │   └── resources
-    │       ├── application.properties
-    │       ├── static
-    │       └── templates
-    └── test
-        └── java
-            └── com
-                └── email
-                    └── emai
-                        └── writer
-                            └── EmailWriterApplicationTests.java
+└── email-writer-frontend
+    ├── README.md
+    ├── eslint.config.js
+    ├── index.html
+    ├── package-lock.json
+    ├── package.json
+    ├── public
+    │   └── vite.svg
+    ├── src
+    │   ├── App.css
+    │   ├── App.jsx
+    │   ├── assets
+    │   │   └── react.svg
+    │   ├── index.css
+    │   └── main.jsx
+    └── vite.config.js
+
 
 ```
 
