@@ -22,8 +22,8 @@ function App() {
     //  in the try
      try{
       // Set end point with axios.post and axios is able to make HTTP requsts to a server
-      //from a web application local ver. http://localhost:8080/api/email/generate
-      const response = await axios.post("https://ai-email-writer-backend-i90i.onrender.com/", {
+      //from a web application local ver.
+      const response = await axios.post("http://localhost:8080/api/email/generate", {
         // pass emailContent, tone as a part of the request body
         emailContent,
         tone
