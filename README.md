@@ -87,7 +87,8 @@ It provides the modern design with this application. For each TextField and Sele
 <br/>
 <br/>
   Ex.2 Reply to Sender (when it is popped out) <br/>
-  <img width="456" alt="image" src="https://github.com/user-attachments/assets/ccffacfb-2f55-4346-88c8-77857cfb150c" />
+  <img width="450" alt="image" src="https://github.com/user-attachments/assets/04e43ecb-5b9a-4a23-91c5-471b40671dfe" />
+
 
     
 </p>
