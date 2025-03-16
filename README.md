@@ -181,8 +181,10 @@ DJANGO_SETTINGS_MODULE=project.settings.local
 
 ### Check how it works
 
-Check if you can access to http://127.0.0.1:8000
-If so, it's successful.
+Check if you can access to https://verdant-sunburst-f21397.netlify.app/
+However, the server (backend) is made with render free plan, so you cannot get
+a reply because the sever has a limited time.
+Please see the following picture as an example.
 
 <!-- 
 <### コンテナの停止
