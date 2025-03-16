@@ -1,4 +1,4 @@
-
+<img width="456" alt="image" src="https://github.com/user-attachments/assets/26ab7373-9cf5-4162-85fa-afa0fffe5246" />
 <div id="top"></div>
 
 ## Table of the development environment
@@ -68,13 +68,26 @@
   Request from @Requestbody in the Controller with emailcontent and tone variables. Due to @Data, it is unnecessary to<br/>
   to make getter, setter, and constructor in this class.<br/>
    EmailGeneratorController has @RequestMapping, which sets the endpoint to "/api/email". In that class, EmailGeneratorService object is created. In other way, Constructor of the EmailGeneratorController is created automatically because of @AllArgsConstructor (With this annotation, EmailGenratorService bean object is created in the arguments and passed through).<br/>
-   ResponseEntity<String> is a class and return type (Spring Framework) of gnerateEmail method. @RequestBody inject the function of conversion from JSON to JAVA object, which refers to EmailRequest class in the arguments. The response variable stores the generateEmailReply method of emailGeneratorService class with the parenthesis "emailRequest". And return "response" String variable with .ok method of ResponseEntity.BodyBuilder.
+   ResponseEntity<String> is a class and return type (Spring Framework) of gnerateEmail method. @RequestBody inject the function of conversion from JSON to JAVA object, which refers to EmailRequest class in the arguments. The response variable stores the generateEmailReply method of emailGeneratorService class with the parenthesis "emailRequest". And return "response" String variable with .ok method of ResponseEntity.BodyBuilder.<br/>
 
   <h1>Frontend(React)</h1>
    In the Frontend side, I used React framework with Vite. I mainly made 5 useState hooks including emailContent, tone, generatedReply, loading, error. <br/>
     For generatedReply, loading, and error, these variable are used in handleSubmit function. handleSubmit function has async function with await keywords. They allow to stop the code execution. For instance, handleSubmit function is stopped till promise is resolved (e.,g API request (backend side) is completed. In that process, the code return error value with console.error if error is catched. After try and catch process, setLoading is set to false value, which shows stop loading.<br/>
     For rendering in the return statement, all design and word size are used from material UI.
-It provides the modern design with this application. For each TextField and Select component, I set onChange prop which has event handler and set onClick prop which handle the click event for Button component.
+It provides the modern design with this application. For each TextField and Select component, I set onChange prop which has event handler and set onClick prop which handle the click event for Button component. <br/>
+<img width="663" alt="image" src="https://github.com/user-attachments/assets/37d4230b-7328-4faf-94c7-196b9ea33908" />
+<br/>
+
+<h1>Google extension</h1>
+  email-writer-ext folder allows the user to use this application to use in Google chrome. For manifest.json, it's mainly based on the template provided by Google; however, I added host_permissions proxy, which connects to backend side ("https://localhost:8080/*") and accept the extension permission to access any URL that matches the pattern (*://mail.google.com/* ).
+  The critical point of content.js is observer variable, which refers to MutationObserver object which has a call back function inside. This variable allows the application to detect the change of dialog box (shown with '.aDh, .btC, [role="dialog"]') as below.<br/>
+  Ex.1 Reply to Sender (inside the received mail)
+<img width="1127" alt="image" src="https://github.com/user-attachments/assets/9005181d-1f7d-424f-8c31-3107118c0e3e" />
+
+<br/>
+  Ex.2 Reply to Sender (when it is popped out)
+  <img width="456" alt="image" src="https://github.com/user-attachments/assets/ccffacfb-2f55-4346-88c8-77857cfb150c" />
+
     
 </p>
 <!-- プロジェクトの概要を記載 -->
@@ -193,6 +206,16 @@ Check if you can access to https://verdant-sunburst-f21397.netlify.app/ <br/>
 However, the server (backend) is made with render free plan, so you cannot get <br/>
 a reply because the sever has a limited time. <br/>
 Please see the following picture as an example. <br/>
+
+Ex.1 Reply with professional tone. <br/>
+<img width="893" alt="image" src="https://github.com/user-attachments/assets/9dac86c0-6b0a-4c99-a8c5-6c02102928ec" />
+
+Ex.2 Reply with casual tone. <br/>
+<img width="893" alt="image" src="https://github.com/user-attachments/assets/2d73b291-7fa0-4da0-b3c8-b4b0aa90fc19" />
+
+Ex.3 Reply with friendly tone. <br/>
+<img width="877" alt="image" src="https://github.com/user-attachments/assets/f18aef02-75c0-4c51-ade2-cd025dce72ad" />
+
 
 <!-- 
 <### コンテナの停止
