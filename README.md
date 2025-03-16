@@ -101,9 +101,10 @@ For other package version, please refer to pom.xml and package.json.
 ❯ tree -I 'node_modules'
 ```bash
 .
-.
 ├── email-writer-backend
+│   ├── Dockerfile
 │   ├── HELP.md
+│   ├── README.md
 │   ├── mvnw
 │   ├── mvnw.cmd
 │   ├── pom.xml
@@ -150,7 +151,6 @@ For other package version, please refer to pom.xml and package.json.
     │   ├── index.css
     │   └── main.jsx
     └── vite.config.js
-
 
 ```
 
