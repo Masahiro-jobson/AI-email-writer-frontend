@@ -131,35 +131,70 @@ For other package version, please refer to pom.xml and package.json.
 │   ├── mvnw
 │   ├── mvnw.cmd
 │   ├── pom.xml
-│   └── src
-│       ├── main
-│       │   ├── java
-│       │   │   └── com
-│       │   │       └── email
-│       │   │           └── emai
-│       │   │               └── writer
-│       │   │                   ├── EmailGeneratorController.java
-│       │   │                   ├── EmailGeneratorService.java
-│       │   │                   ├── EmailRequest.java
-│       │   │                   └── EmailWriterApplication.java
-│       │   └── resources
-│       │       ├── application.properties
-│       │       ├── static
-│       │       └── templates
-│       └── test
-│           └── java
-│               └── com
-│                   └── email
-│                       └── emai
-│                           └── writer
-│                               └── EmailWriterApplicationTests.java
-├── email-writer-ext
-│   ├── content.css
-│   ├── content.js
-│   ├── hina_drawing.png
-│   └── manifest.json
+│   ├── src
+│   │   ├── main
+│   │   │   ├── java
+│   │   │   │   └── com
+│   │   │   │       └── email
+│   │   │   │           └── emai
+│   │   │   │               └── writer
+│   │   │   │                   ├── EmailGeneratorController.java
+│   │   │   │                   ├── EmailGeneratorService.java
+│   │   │   │                   ├── EmailRequest.java
+│   │   │   │                   └── EmailWriterApplication.java
+│   │   │   └── resources
+│   │   │       ├── application.properties
+│   │   │       ├── static
+│   │   │       └── templates
+│   │   └── test
+│   │       └── java
+│   │           └── com
+│   │               └── email
+│   │                   └── emai
+│   │                       └── writer
+│   │                           └── EmailWriterApplicationTests.java
+│   └── target
+│       ├── classes
+│       │   ├── application.properties
+│       │   └── com
+│       │       └── email
+│       │           └── emai
+│       │               └── writer
+│       │                   ├── EmailGeneratorController.class
+│       │                   ├── EmailGeneratorService.class
+│       │                   ├── EmailRequest.class
+│       │                   └── EmailWriterApplication.class
+│       ├── email-writer-0.0.1-SNAPSHOT.jar
+│       ├── email-writer-0.0.1-SNAPSHOT.jar.original
+│       ├── generated-sources
+│       │   └── annotations
+│       ├── generated-test-sources
+│       │   └── test-annotations
+│       ├── maven-archiver
+│       │   └── pom.properties
+│       ├── maven-status
+│       │   └── maven-compiler-plugin
+│       │       ├── compile
+│       │       │   └── default-compile
+│       │       │       ├── createdFiles.lst
+│       │       │       └── inputFiles.lst
+│       │       └── testCompile
+│       │           └── default-testCompile
+│       │               ├── createdFiles.lst
+│       │               └── inputFiles.lst
+│       └── test-classes
+│           └── com
+│               └── email
+│                   └── emai
+│                       └── writer
+│                           └── EmailWriterApplicationTests.class
 └── email-writer-frontend
     ├── README.md
+    ├── email-writer-ext
+    │   ├── content.css
+    │   ├── content.js
+    │   ├── hina_drawing.png
+    │   └── manifest.json
     ├── eslint.config.js
     ├── index.html
     ├── package-lock.json
