@@ -66,14 +66,17 @@
   EmailWriterApplication is the main class for making the program run. EmailRequest handles<br/>
   Request from @Requestbody in the Controller with emailcontent and tone variables. Due to @Data, it is unnecessary to<br/>
   to make getter, setter, and constructor in this class.<br/>
+  <br/>
    EmailGeneratorController has @RequestMapping, which sets the endpoint to "/api/email". In that class, EmailGeneratorService object is created. In other way, Constructor of the EmailGeneratorController is created automatically because of @AllArgsConstructor (With this annotation, EmailGenratorService bean object is created in the arguments and passed through).<br/>
    ResponseEntity<String> is a class and return type (Spring Framework) of gnerateEmail method. @RequestBody inject the function of conversion from JSON to JAVA object, which refers to EmailRequest class in the arguments. The response variable stores the generateEmailReply method of emailGeneratorService class with the parenthesis "emailRequest". And return "response" String variable with .ok method of ResponseEntity.BodyBuilder.<br/>
+   <br/>
    For using Backend as an application, I used render.com allowing users to make Website. To deploy Spring project in the website, I packed all packages into Dockerfile and deploy it to the website.
 Before making Docker file, made "email-writer-0.0.1-SNAPSHOT.jar" file by executing "mvn clean package -DskipTests". I spent lots of time to extract .jar file because there are lots of errors that I had to find out.
 
   <h1>Frontend(React)</h1>
    In the Frontend side, I used React framework with Vite. I mainly made 5 useState hooks including emailContent, tone, generatedReply, loading, error. <br/>
     For generatedReply, loading, and error, these variable are used in handleSubmit function. handleSubmit function has async function with await keywords. They allow to stop the code execution. For instance, handleSubmit function is stopped till promise is resolved (e.,g API request (backend side) is completed. In that process, the code return error value with console.error if error is catched. After try and catch process, setLoading is set to false value, which shows stop loading.<br/>
+    <br/>
     For rendering in the return statement, all design and word size are used from material UI.
 It provides the modern design with this application. For each TextField and Select component, I set onChange prop which has event handler and set onClick prop which handle the click event for Button component.
  <br/>
