@@ -33,7 +33,6 @@
 2. [Environment](#Environment)
 3. [Directory](#Directory)
 4. [CrateDevelopmentEnvironment](#CreateDevelopmentEnvironment)
-5. [Troubleshooting](#Troubleshooting)
 
 <!-- READMEの作成方法のドキュメントのリンク -->
 <!-- <br />
