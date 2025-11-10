@@ -72,6 +72,11 @@
    For using Backend as an application, I used render.com allowing users to make Website. To deploy Spring project in the website, I packed all packages into Dockerfile and deploy it to the website.
 Before making Docker file, made "email-writer-0.0.1-SNAPSHOT.jar" file by executing "mvn clean package -DskipTests". I spent lots of time to extract .jar file because there are lots of errors that I had to find out.
 
+<h1>Hands-on Video</h1> <br/>
+https://github.com/user-attachments/assets/8dc6484f-575e-48c3-ac3c-611b4d980fac
+
+
+
   <h1>Frontend(React)</h1>
    In the Frontend side, I used React framework with Vite. I mainly made 5 useState hooks including emailContent, tone, generatedReply, loading, error. <br/>
     For generatedReply, loading, and error, these variable are used in handleSubmit function. handleSubmit function has async function with await keywords. They allow to stop the code execution. For instance, handleSubmit function is stopped till promise is resolved (e.,g API request (backend side) is completed. In that process, the code return error value with console.error if error is catched. After try and catch process, setLoading is set to false value, which shows stop loading.<br/>
