@@ -72,7 +72,7 @@
    For using Backend as an application, I used render.com allowing users to make Website. To deploy Spring project in the website, I packed all packages into Dockerfile and deploy it to the website.
 Before making Docker file, made "email-writer-0.0.1-SNAPSHOT.jar" file by executing "mvn clean package -DskipTests". I spent lots of time to extract .jar file because there are lots of errors that I had to find out.
 
-<h1>Hands-on Video</h1> <br/>
+<h1>Hands-on Video</h1>
 https://github.com/user-attachments/assets/8fdfaea4-184d-4f18-9470-20a2489894bb
 
 
