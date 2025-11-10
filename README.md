@@ -73,7 +73,11 @@
 Before making Docker file, made "email-writer-0.0.1-SNAPSHOT.jar" file by executing "mvn clean package -DskipTests". I spent lots of time to extract .jar file because there are lots of errors that I had to find out.
 
 <h1>Hands-on Video</h1>
-https://github.com/user-attachments/assets/8fdfaea4-184d-4f18-9470-20a2489894bb
+
+
+https://github.com/user-attachments/assets/fc08b1e6-d858-44b0-a61c-4af4dcece9e7
+
+
 
 
 
